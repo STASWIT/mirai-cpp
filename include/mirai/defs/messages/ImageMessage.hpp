@@ -58,7 +58,7 @@ namespace Cyan
 				imageId_ = json["imageId"].get<string>();
 			if (!json["url"].is_null())
 				url_ = json["url"].get<string>();
-			if (!json["path"].is_null())
+			else if (!json["path"].is_null())
 				path_ = json["path"].get<string>();
 			return true;
 		}

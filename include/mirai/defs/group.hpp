@@ -28,7 +28,7 @@ namespace Cyan
 			json j = json::object();
 			j["id"] = int64_t(GID);
 			j["nickname"] = Name;
-			j["remark"] = GroupPermissionStr(Permission);
+			j["permission"] = GroupPermissionStr(Permission);
 			return j;
 		}
 	};
